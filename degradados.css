@@ -1,0 +1,63 @@
+
+/* CENTRADO PERFECTO USANDO column */
+.container-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+  
+}
+
+p{
+    font-size: 20px;
+    color: beige;
+}
+
+.degradado{
+    border: 2px solid tomato;
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(to left, orange, red);
+}
+
+.degradado-deg{
+    border: 2px solid tomato;
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(15deg, orange, red);
+}
+
+.degradado-colores{
+    border: 2px solid tomato;
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(salmon, orange, red, blue 90%);
+}
+
+.degradado-radial{
+    border: 2px solid tomato;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(salmon, orange, red, blue 90%);
+}
+
+.degradado-radial-circle{
+    border: 2px solid tomato;
+    width: 350px;
+    height: 350px;
+    background: repeating-radial-gradient(circle, salmon, orange, red, blue 20%);
+}
+
+
+.degradado-linear{
+    border: 2px solid tomato;
+    width: 350px;
+    height: 350px;
+    background: repeating-linear-gradient(180deg,red, red 10px, blue, blue 20px);
+}

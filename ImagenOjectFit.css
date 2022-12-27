@@ -1,0 +1,100 @@
+
+.pt-50{
+    padding-top: 50px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container-img{
+    width: 50%;
+    height: 50%;
+    border: 3px solid tomato;
+    /* esto quita el espacio que queda debajo de la imagen */
+    line-height: 0; 
+ 
+}
+/* IMAGEN 100% RESPONSIVE */
+.img{
+   width: 100%;
+   height: 100%;
+   /* esto quita el espacio que queda debajo de la imagen */
+   /* display: block; */
+}
+
+
+/* SIN OBJECTO FIT */
+/* la imagen tiene una altura que la distorciona para corregirla sin modificar su tamaño
+   usamos sacle-down */
+.img-sin-object-fit{
+    width: 100%;
+    /* para forzar la altura debemos usar medidas como px */
+    height: 20rem; 
+  }
+
+
+/* CON OBJECT FIT SCALE DOWN */
+.img-object-fit-scale-down{
+    width: 100%;
+    /* para forzar la altura debemos usar medidas como px */
+    height: 20rem; 
+    /* le agregamos scale-down a la imagen para escalar su tamaño y que se ajuste al contenedor */
+    object-fit: scale-down;
+}
+
+
+/* CON OBJECT FIT COVER */
+.img-object-fit-cover{
+    width: 100%;
+    /* para forzar la altura debemos usar medidas como px */
+    height: 20rem; 
+    /* le agregamos scale-down a la imagen para escalar su tamaño y que se ajuste al contenedor */
+    object-fit: cover;
+    /* por default usa  */
+    /* object-position: center; */
+}
+
+
+/* CON OBJECT FIT COVER POSITION LEFT */
+.img-object-fit-cover-position-left{
+    width: 100%;
+    /* para forzar la altura debemos usar medidas como px */
+    height: 20rem; 
+    /* le agregamos scale-down a la imagen para escalar su tamaño y que se ajuste al contenedor */
+    object-fit: cover;
+    object-position: left;
+}
+
+
+/* CON OBJECT FIT COVER POSITION RIGHT */
+.img-object-fit-cover-position-right{
+    width: 100%;
+    /* para forzar la altura debemos usar medidas como px */
+    height: 20rem; 
+    /* le agregamos scale-down a la imagen para escalar su tamaño y que se ajuste al contenedor */
+    object-fit: cover;
+    object-position: right;
+}
+
+/* IMAGEN SIN CONTENEDOR */
+.sin-contenedor{
+    width: 50%;
+    height: 20rem;
+    display: block;
+    background: skyblue;
+    margin: 1rem auto;
+
+}
+
+.scale-down{
+  object-fit: scale-down;
+}
+
+
+
+
+
+

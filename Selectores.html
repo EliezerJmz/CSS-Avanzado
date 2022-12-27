@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Selectores.css">
+    <title>Selectores</title>
+</head>
+<body>
+    <header>
+        <h1>Selectores en CSS</h1>
+    </header>
+
+    <main>
+        <article>
+            <section>
+                <h2>Selector padre > hijo directo este selector funciona solo con un elemento hijo </h2>
+                <h2>
+                    <span>Texto de ejemplo elemento hijo</span>
+                </h2>
+            </section>
+
+            <section>
+                <h2>Selector padre > hijo y sub hijo no funciona </h2>
+                <h3>
+                    <a href="">
+                        <span>Texto de ejemplo elemento hijo</span>
+                    </a>
+                </h3>
+            </section>
+            
+            <section>
+                <h2>Selector padre > hijo y sub hijo no funciona </h2>
+                <h4>
+                    <a href="">
+                        <span>Texto de ejemplo elemento hijo</span>
+                    </a>
+                </h4>
+            </section>
+
+            <section>
+                <h2>Selector adyacente + </h2>
+                <h3>las propiedades se aplicaran solo al primer h4 que aparezca despues del h3</h3>
+                <h3>Curso css3 en un h3</h3>
+                <h4>Curso de html en un h4</h4>
+                <h4>Curso de java en un h4</h4>
+              
+            </section>
+
+            <section>
+                <h2>Selector hermano ~ </h2>
+                <h3>pone fondo a las etiquetas p que estan despues del h1</h3>
+                <p>el simbolo lo obtenemos con  alt+126</p>
+                <div class="contenedor">
+                    <p>uno</p>
+                    <h1>dos</h1>
+                    <span>tres</span>
+                    <p>cuatro</p>
+                    <div>cinco</div>
+                    <h2>seis</h2>
+                    <p>siete</p>
+                    <span>ocho</span>
+                </div>
+            </section>
+
+            <section>
+                <h2>Selector de atributo =</h2>
+                <h3>atributo="nombre"</h3>
+                <h1 titulo = "curso">Curso de Css</h1>
+            </section>
+            <section>
+                <h2>Selector de atributo con clases =</h2>
+                <h3>clase="nombre"</h3>
+                <h1 class="titulo">Curso de Css</h1>
+            </section>
+        </article>
+
+    </main>
+
+    <footer>
+        <a href="https://www.youtube.com/watch?v=MFaHjj_f7hI&list=PLg9145ptuAihoxLk6_fPLz0zD4o1S92ev&index=22">Video</a>
+    </footer>  
+</body>
+</html>

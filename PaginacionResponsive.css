@@ -1,0 +1,38 @@
+
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+}
+body{
+    background-color:darkturquoise ;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.paginacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: beige;
+}
+.item{
+    /* 8 items por 12.5% = 100% */
+    width: 12.5%;
+    line-height: 80px;
+    text-align: center;
+    color: brown;
+    font-size: 19px;
+    font-weight: 800px;
+    transition: 0.2s linear;
+}
+.paginacion a:hover{
+    background-color: salmon;
+    color: beige;
+}

@@ -1,0 +1,26 @@
+body{
+    background-color: salmon;
+}
+
+/* para centrar en columnas */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.texto{
+    width: 200px;
+    border: 3px solid tomato;
+    /* el espacio del texto estara en una sola linea */
+    white-space: nowrap;
+    /* oculta el contenido que se desborda */
+    overflow: hidden;
+    padding: 20px;
+    font-size: 24px;
+    margin: 0;
+    background-color: beige;
+    /* podemos cambiar manualmente en el html el tamaño del contenedor del texto para ver todo el texto */
+    resize: horizontal;
+}

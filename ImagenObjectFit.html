@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen Oject Fit</title>
+    <link rel="stylesheet" href="ImagenOjectFit.css">
+</head>
+<body>
+    <section class="container">
+        <h1>Ajustes de Ojetos con object Fit</h1>
+        <h3><a href="https://www.youtube.com/watch?v=SqEYTlfIrbw">Video</a></h3>
+        <h2>oject-fit</h2>
+        <h3>Defino como se adapta una imagen a su contenedor.</h3>
+
+        <h2>Ajustar imagen al 100% de su contenedor</h2>
+        <h3>El contenedor tiene un width 50% y un height: 50%</h3>
+        <h3>para que la imagen ocupe el 100% del contenedor le lindicamos a la imagen una altura y ancho del 100%</h3>
+        <article class="container-img">
+            <img src="imgs/luna.jpg" class="img">
+        </article>
+
+
+        <h1 class="pt-50">Imagen sin objet Fit</h1>
+        <h3>la imagen tiene una altura que la distorciona para corregirla sin modificar su tamaño
+            usamos scale-down </h3>
+        <article class="container-img">
+            <img src="imgs/luna.jpg" class="img-sin-object-fit">
+        </article>
+
+
+        <h1 class="pt-50">Imagen con objet Fit: scale-down</h1>
+        <h3>la imagen cambio su scala para adaptarse pero el contenedor mantuvo los height: 20rem; </h3>
+        <article class="container-img">
+            <img src="imgs/luna.jpg" class="img-object-fit-scale-down">
+        </article>
+
+
+        <h1 class="pt-50">Imagen con objet Fit: cover</h1>
+        <h3>la imagen crecio para cubrir el 100% de la altura pero el contenedor mantuvo los height: 20rem; </h3>
+        <article class="container-img">
+            <img src="imgs/luna.jpg" class="img-object-fit-cover">
+        </article>
+
+        
+        <h1 class="pt-50">Imagen con objet Fit: cover y position left</h1>
+        <h3>la imagen crecio desde la izquierda para cubrir el 100% de la altura pero el contenedor mantuvo los height: 20rem; </h3>
+        <article class="container-img">
+            <img src="imgs/luna.jpg" class="img-object-fit-cover-position-left">
+        </article>
+
+
+        <h1 class="pt-50">Imagen con objet Fit: cover y position right</h1>
+        <h3>la imagen crecio desde la derecha para cubrir el 100% de la altura pero el contenedor mantuvo los height: 20rem; </h3>
+        <article class="container-img">
+            <img src="imgs/luna.jpg" class="img-object-fit-cover-position-right">
+        </article>
+
+        <h1 class="pt-50">Solo la imagen sin contenedor</h1>
+        <h3>la etiqueta imagen tiene una alrura definida en su clase, pero el objeto imagen es el que cambia su forma para adpatarse usando object-fit</h3>
+        <img src="imgs/luna.jpg" class="sin-contenedor scale-down">
+
+    </section>
+    
+</body>
+</html>

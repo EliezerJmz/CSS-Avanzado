@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="unodadesAbsolutasRelativas.css">
+    <title>Unidades</title>
+</head>
+<body>
+<header class="container">
+    <h1>Unidades de medidas</h1>
+    <h3><a href="https://www.youtube.com/watch?v=RBdg9IRdzzs&list=PLg9145ptuAihoxLk6_fPLz0zD4o1S92ev&index=20">Video</a></h3>
+</header>
+<main class="container">
+<article>
+    <section style="background-color: tomato; padding: 20px;">
+        <h2>Unidades Relativas em</h2>
+        <p>Toman como base las unidades del contenedor padre</p>
+        <p>el padre tiene como base 20px</p>
+        <p>el hijo tiene 1.5 em lo que multiplicara por 1.5 * 20px del padre = 30px</p>
+        <div class="padre">
+            Texto Padre 20px
+            <div class="hijo">
+                Texto hijo 1.5em
+            </div>
+            <div>
+                Hereda el tamaño del texto padre 20px
+            </div>
+            <div class="hijo-2">
+                Texto de 2em = 40px
+                <div>
+                    Texto Sub hijo tomo como base a su contenedor padre
+                </div>
+                <div class="sub-hijo">
+                    Texto sub hijo 2em por la base del padre 40px = 80px
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="background-color: salmon; padding: 20px;">
+        <h2>Unidades rem</h2>
+        <h3>Toman siempre como base principal 16px que usan los navegadores por defecto</h3>
+        <div class="padre">
+            Texto padre base 20px
+            <div class="hijo-rem">
+                Texto 2rem = 16px tamaño navegador por default * 2 = 32px
+
+                <div class="sub-hijo-rem">
+                    Texto sub hijo 2rem Mantiene la base del navegador de 16px
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>viewport</h2>
+        <h2>es un porcentaje concreto del tamaño espesifico que tengamos en la ventana del navegador</h2>
+    </section>
+</article>
+</main>
+    
+</body>
+
+</html>

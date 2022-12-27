@@ -1,0 +1,71 @@
+.container-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.text-titulo{
+    font-size: 1.5rem;
+}
+
+.text-shadow-1{
+    font-size: 5vw;
+    color: tomato;
+    /* sintaxis  text-shadow: black 1px -1px 5px color; primer punto en eete caso 10px es movimiento horizontal */
+    /* el otro punto en este caso 10px movimoento vertical y el ultimo punto 25px difuminacion de la sombra*/
+    /* arriba o izquierda son valores negativos */
+    text-shadow: 1px -1px 5px red;
+}
+
+.text-shadow-2{
+    font-size: 5vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: tomato;
+    text-shadow: 3px 3px 3px red;
+}
+
+/* vh y vw para tamaños responsives */
+.box-shadow-1{
+    background-color: salmon;
+    width: 40vh;
+    height: 40vh;
+    font-size: 3vw;
+    color: beige;
+    box-shadow: 10px 20px 20px tomato;
+}
+.box-shadow-2{
+    background-color: salmon;
+    width: 40vh;
+    height: 40vh;
+    font-size: 3vw;
+    color: beige;
+    box-shadow: 10px 20px 20px tomato inset;
+}
+
+
+.tarjeta{
+    width: 40vh;
+    text-align: center;
+    /* usamos colores rgba rojo verde azul alpha = es la sombra */
+    /* box-shadow: horizontal vertica difimunacion; */
+    /* 0 4px 8px es una capa de sombra */
+    /* gba rojo verde azul alpha = es la sombra  */
+    /* 0 6px 20px otra capa de sombra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px;
+}
+/* hacer imagen responsive */
+img{
+    max-width: 100%;
+    height: auto;
+}
+.titulo{
+    font-size: 2rem;
+}
+.subtitulo{
+    padding-bottom: 15px;
+    font-size: 1rem;
+}

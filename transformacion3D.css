@@ -1,0 +1,156 @@
+/* CENTRADO PERFECTO EL COLUMNA */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+body{
+    background-color: beige;
+}
+
+.envoltura{
+    width: 300px;
+    height: 300px;
+    perspective: 700px;
+    margin: 10px auto;
+}
+
+/* posicion original */
+.cubo{
+    position: relative;
+     width: 150px;
+     height: 150px;
+     transform-style: preserve-3d;
+     transform: rotateY(35deg) rotateX(-38deg);
+     transition: 300ms ease-in;
+}
+/* la rotación del cubo la manipulamos con el hover */
+.cubo:hover{
+    transform: rotateY(0deg) rotateX(0deg);
+}
+
+.cubo div{
+     /* activar relative para ver la posicion de cada una de las caras por sepadado */
+    /* position: relative; */
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: gray;
+}
+/* estas son las caras del cubo son los div */
+/* el primer div el frente */
+.cubo div:nth-child(1){
+    /* eje z mueve los objetos hacia el frente */
+    transform: translateZ(75px);
+    background: blue;
+}
+/* atras */
+.cubo div:nth-child(2){
+    /* eje z mueve los objetos hacia el frente */
+    transform: rotateX(180deg) translateZ(75px);
+    background: salmon;
+}
+/* izquierdo */
+.cubo div:nth-child(3){
+    /* eje z mueve los objetos hacia el frente */
+    transform: rotateY(-90deg) translateZ(75px);
+    background: tomato;
+}
+/* derecho */
+.cubo div:nth-child(4){
+    /* eje z mueve los objetos hacia el frente */
+    transform: rotateY(90deg) translateZ(75px);
+    background: orange;
+}
+/* arriba */
+.cubo div:nth-child(5){
+    /* eje z mueve los objetos hacia el frente */
+    transform: rotateX(90deg) translateZ(75px);
+    background: olivedrab;
+}
+/* abajo */
+.cubo div:nth-child(6){
+    /* eje z mueve los objetos hacia el frente */
+    transform: rotateX(-90deg) translateZ(75px);
+    background: blueviolet;
+}
+
+
+
+
+/***************** CUBO CON IMAGENES *****************/
+
+.envoltura-img{
+    width: 300px;
+    height: 300px;
+    perspective: 700px;
+    margin: 100px auto;
+}
+
+/* posicion original */
+.cubo-img{
+    position: relative;
+     width: 300px;
+     height: 300px;
+     transform-style: preserve-3d;
+     transform: rotateY(360deg) rotateX(45deg);
+     transition: 5000ms ease-in;
+}
+/* la rotación del cubo la manipulamos con el hover */
+.cubo-img:hover{
+    transform: rotateY(0deg) rotateX(0deg);
+  
+}
+
+.cubo-img div{
+     /* activar relative para ver la posicion de cada una de las caras por sepadado */
+    /* position: relative; */
+    position: absolute;
+    width: 300px;
+    height: 300px;
+      /* usamos colores rgba rojo verde azul alpha = es la sombra */
+    /* box-shadow: horizontal vertica difimunacion; */
+    /* 0 4px 8px es una capa de sombra */
+    /* gba rojo verde azul alpha = es la sombra  */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+/* estas son las caras del cubo son los div */
+/* el primer div el frente */
+.cubo-img div:nth-child(1){
+    /* eje z mueve los objetos hacia el frente en este caso la mitad del tamaño del cubo 150px */
+    transform: translateZ(150px);
+    background: url("imgs/cubo1.jpg") center/cover no-repeat;
+}
+/* atras */
+.cubo-img div:nth-child(2){
+       /* eje z mueve los objetos hacia el frente en este caso la mitad del tamaño del cubo 150px */
+    transform: rotateX(180deg) translateZ(150px);
+    background: url("imgs/cubo2.jpg") center/cover no-repeat;
+}
+/* izquierdo */
+.cubo-img div:nth-child(3){
+    /* eje z mueve los objetos hacia el frente */
+    transform: rotateY(-90deg) translateZ(150px);
+    background: url("imgs/cubo3.jpg") center/cover no-repeat;
+}
+/* derecho */
+.cubo-img div:nth-child(4){
+    /* eje z mueve los objetos hacia el frente */
+    transform: rotateY(90deg) translateZ(150px);
+    background: url("imgs/cubo4.jpg") center/cover no-repeat;
+}
+/* arriba */
+.cubo-img div:nth-child(5){
+    /* eje z mueve los objetos hacia el frente */
+    transform: rotateX(90deg) translateZ(150px);
+    background: url("imgs/cubo5.jpg") center/cover no-repeat;
+}
+/* abajo */
+.cubo-img div:nth-child(6){
+    /* eje z mueve los objetos hacia el frente */
+    transform: rotateX(-90deg) translateZ(150px);
+    background: url("imgs/cubo6.jpg") center/cover no-repeat;
+}

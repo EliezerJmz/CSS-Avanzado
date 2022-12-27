@@ -1,0 +1,66 @@
+
+.contenedor{
+  background-color: salmon;
+  min-height: 45vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.fondo{
+  padding: 25px;
+  border: 12px solid red;
+  width: 340px;
+  height: 280px;
+  /* sintaxis de background: (ruta)(position en  px) / (dimenesion ancho altura en px) no-repeat; */
+  /* valores de la posicion: top px right px bottom px left px center */
+  background: url("multiples/gato.png") top 40px left 40px / 80px 80px no-repeat;
+}
+
+
+.fondo2{
+  padding: 25px;
+  border: 12px solid red;
+  width: 340px;
+  height: 280px;
+  /* sintaxis de background: (ruta)(position en  px) / (dimenesion ancho altura en px) no-repeat; */
+  /* valores de la posicion: top px right px bottom px left px center */
+  background: url("multiples/balon.jpg") top / 100px no-repeat, 
+              url("multiples/balon2.jpg") center / 100px no-repeat;
+}
+
+.fondo3{
+  padding: 25px;
+  border: 12px solid red;
+  width: 340px;
+  height: 280px;
+  /* sintaxis de background: (ruta)(position en  px) / (dimenesion ancho altura en px) no-repeat; */
+  /* valores de la posicion: top px right px bottom px left px center */
+  background: url("multiples/balon2.jpg");
+  background-size: contain;
+}
+
+.fondo4{
+  padding: 25px;
+  border: 12px solid red;
+  width: 340px;
+  height: 280px;
+  /* sintaxis de background: (ruta)(position en  px) / (dimenesion ancho altura en px) no-repeat; */
+  /* valores de la posicion: top px right px bottom px left px center */
+  background: url("multiples/plato.png") center / 180px no-repeat,
+              url("multiples/mesa.jpg") center/cover no-repeat;
+}
+
+.fondo5{
+  padding: 30px;
+  border: 12px solid red;
+  width: 340px;
+  height: 280px;
+  font-size: 24px;
+  background-color: green;
+  background-clip: content-box;
+}
+
+
+
+

@@ -1,0 +1,97 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+     /* ocupa el 100% de la pantalla */
+     min-height: 100vh; 
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(14, 13, 13, 0.87);
+}
+.logo{
+    color: bisque;
+    /* clamp(minimo, ideal, naximo)  */
+    font-size: clamp(1.2rem, 2vw, 10rem);
+    font-weight: 700;
+    padding: 10px;
+}
+.nav ul{
+    list-style-type: none;
+    display: flex;
+    padding-right: 10px;
+}
+.nav li{
+    padding: 0.5rem;
+}
+.nav a{
+    /* clamp(minimo, ideal, naximo)  */
+    font-size: clamp(0.75rem, 1.2vw, 3rem);
+    text-decoration: none;
+    color: beige;
+}
+
+.main{
+     /* ajusta el tamaño del main al contenedor */
+     flex-grow: 1;
+}
+.footer{
+    margin-top: 50px;
+    padding-left: 10px;
+    background-color: rgba(14, 13, 13, 0.87);
+    color: beige;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* USO DE LA FUNCION MIN MAX CLAMP */
+.cuadro-min{
+    width: min(50vw, 500px);
+    height: 400px;
+    background-color: salmon;
+    box-shadow: 3px 8px 10px tomato;
+}
+
+.cuadro-max{
+    width: max(50vw, 200px);
+    height: 400px;
+    background-color: salmon;
+    box-shadow: 3px 8px 10px tomato;
+}
+
+
+
+/* CLAMP(VALOR_MINIMO, VALOR_IDEAL, VALOR_MAXIMO) TAMAÑO DE TEXTO FLUIDO */
+.cuadro-clamp{
+    width:50vw;
+    height: auto;
+    background-color: salmon;
+    box-shadow: 3px 8px 10px tomato;
+}
+.clamp-1{
+    /* clamp(minimo, ideal, naximo)  */
+    font-size: clamp(1.3rem, 2vw, 10rem);
+    font-weight: 700;
+}
+.clamp-2{
+    /* clamp(minimo, ideal, naximo)  */
+    font-size: clamp(1.1rem, 1.5vw, 8rem);
+    font-weight: 500;
+}
+.clamp-3{
+    /* clamp(minimo, ideal, naximo)  */
+    font-size: clamp(0.8rem, 1.1vw, 6rem);
+}

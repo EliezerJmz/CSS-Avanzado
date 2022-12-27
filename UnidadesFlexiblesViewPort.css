@@ -1,0 +1,81 @@
+/* cambiamos el alto de espaciado al texto */
+html{
+    line-height: 1.5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* UNIDADES FLEXIBLES VIEW PORT */
+.content{
+    background: linear-gradient(to left, cadetblue, lightcyan);
+    padding: 10vh 0;
+    /* ocupar el 100% de la pantalla */
+    max-width: 100%;
+    height: auto;
+}
+
+.caja{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+
+width: 90%;
+max-width: 960px;
+/* para centrar elementos */
+margin: 0 auto;
+}
+
+.col{
+    /* flex: 0 1 auto; (flex-grow flex-shrink flex-basis) */
+    /* Flex Grow se aplica a los elementos item */
+    /* factor de crecimiento flex-grow por default es cero */
+    /* flex-grow: 1; ajusta los item al ancho del contenedor si usamos un % en su ancho los hace proporcionalmente */
+    /* flex: 1; todas las col tendran el mismo ancho */
+    flex: 1;
+    padding: 0 1rem;
+}
+
+/* los textos cuando usamos viewport es recomendable definirlo con vw con el ancho */
+.titulo{
+    color: cadetblue;
+    font-size: 4vw;
+    line-height: 1;
+    text-transform: uppercase;
+    margin: 0 0 0.25em;
+}
+.texto{
+    font-size: 1.2em;
+    margin: 0 0 1.5em;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: beige;
+    background-color: cadetblue;
+    padding: 1em 4em;
+    box-shadow: 1px 1px 10px 3px rgba(0, 0, 0, 0.2);
+}
+.imagen{
+    max-width: 100%;
+    height: auto;
+    box-shadow: 3px 3px 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 426px)  {
+    .caja{
+        flex-direction: column;
+    }
+    .imagen{
+        margin-top: 2em;
+    }
+    .titulo{
+        font-size: 6vw;
+    }
+    .texto{
+        margin-top: 1.5em;
+        font-size: 1em;
+    }
+    .btn{
+        padding: 0.5em 2em;
+    }
+  }
+  

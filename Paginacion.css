@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+}
+body{
+    background-color: cornflowerblue;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.paginacion{
+    background-color: beige;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.paginacion a{
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    color: brown;
+    font-size: 19px;
+    font-weight: 800px;
+    transition: 0.2s linear;
+}
+.paginacion a:hover{
+    background-color: salmon;
+    color: beige;
+}

@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.columnas{
+    /* cantidad de columnas */
+    column-count: 3;
+    /* separación entre columnas */
+    column-gap: 22px;
+    /* estilos individuales de linea entre columnas */
+    /* column-rule-style: solid;
+    column-rule-width: 1px;
+    column-rule-color: salmon; */
+
+    /* shortHand para estilos de culumna */
+    column-rule: 1px solid salmon;
+
+    background-color: linen;
+    padding: 15px;
+    box-shadow: 0 ;
+    
+    /* horizontal vertical difuminado rgba = rojo verde azul alpha=difuminacion  otraCapaDeSombra*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px;
+}
+h1{
+    column-span: all;
+}

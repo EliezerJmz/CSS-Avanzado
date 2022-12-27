@@ -1,0 +1,84 @@
+/* ********************* MENU MAIN Y FOOTER ******************* */
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+     /* ocupa el 100% de la pantalla */
+     min-height: 100vh; 
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(14, 13, 13, 0.87);
+}
+.logo{
+    color: bisque;
+    /* clamp(minimo, ideal, naximo)  */
+    font-size: clamp(1.2rem, 2vw, 10rem);
+    font-weight: 700;
+    padding: 10px;
+}
+.nav ul{
+    list-style-type: none;
+    display: flex;
+    padding-right: 10px;
+}
+.nav li{
+    padding: 0.5rem;
+}
+.nav a{
+    /* clamp(minimo, ideal, naximo)  */
+    font-size: clamp(0.75rem, 1.2vw, 3rem);
+    text-decoration: none;
+    color: beige;
+}
+
+.main{
+     /* ajusta el tamaño del main al contenedor */
+     flex-grow: 1;
+}
+.footer{
+    margin-top: 50px;
+    padding-left: 10px;
+    background-color: rgba(14, 13, 13, 0.87);
+    color: beige;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* *************************************************************************** */
+
+.contenedor{
+    position: relative;
+    display: flex;
+    width: 1000px;
+    height: 200px;
+    background-color: tomato;
+    box-sizing: border-box;
+}
+.contenedor .item{
+    position: relative;
+    /* 5 item de 200px = 1000px del dontenedor */
+    /* 100% del contenedor / 5 item -20px del margin 10 por lado de cada item */
+    min-width: calc(calc(100% / 5) - 20px); 
+        /* el mismo resultado lo obtendriamos usando width de 180px */
+        /* min-width: 180px; */
+
+    /* 100% de la altura de la altura del contenedor - 10px por lado del item = 20px */
+    height: calc(100% -20);
+    background-color: black;
+    box-sizing: border-box;
+    /* el margin se suma al tamaño de los item se los restaremos con calc en el width 5item *10px = 100px que debemos restar
+    restaremos 20px por 5 item */
+    margin: 10px;
+}

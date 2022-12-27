@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PaginacionResponsive.css">
+    <!-- cdn para iconos -->
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <!-- aqui buscamos los iconos -->
+    <!-- https://fontawesome.com/icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Paginación con CSs</title>
+</head>
+<body>
+
+    <section class="container">
+        <header>
+            <h1>Paginación 100% responsive usando Css</h1>
+        </header>
+        <article>
+            <p>
+                Paginación responsive con flex, usamos 8 items tipo a, y le asignamos un 12.5% para que cubra el 100%
+            </p>
+            <p>
+                la clase container esta el column y la clase paginación en flex para que este alineada
+                cada clase se usa por separado en su propia section
+            </p>
+        </article>
+    </section>
+
+    <section class="paginacion">
+        <!-- Sintaxis para crear todo junto a*6{$} -->
+        <a href="" class="item"><i class="fa-solid fa-chevron-left"></i></a>
+        <a href="" class="item">1</a>
+        <a href="" class="item">2</a>
+        <a href="" class="item">3</a>
+        <a href="" class="item">4</a>
+        <a href="" class="item">5</a>
+        <a href="" class="item">6</a>
+        <a href="" class="item"><i class="fa-solid fa-chevron-right"></i></a> 
+    </section>
+    
+</body>
+</html>

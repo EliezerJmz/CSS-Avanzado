@@ -1,0 +1,23 @@
+.primer-letra::first-letter{
+    font-size: x-large;
+    font-weight: 700;
+    color: tomato;
+}
+
+.primer-linea::first-line{
+    color: cornflowerblue;
+    font-size:x-large;
+}
+
+.antes::before{
+    content: "ABC";
+    font-size: 25px;
+    font-weight: 700;
+    color: tomato;
+}
+.despues::after{
+    content: "XYZ";
+    font-size: 25px;
+    font-weight: 700;
+    color: cornflowerblue;
+}

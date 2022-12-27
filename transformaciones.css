@@ -1,0 +1,108 @@
+/* CENTRADO PERFECTO EN COLUMNA */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* IMAGEN RESPONSIVE */
+img{
+    max-width: 100%;
+    height: auto;
+}
+h2{
+    color: beige;
+    font-size: 2rem;
+}
+.transform-2d-0{
+    width: 280px;
+    height: 280px;
+    background: url("imgs/img1.jpg") center / cover no-repeat  ;
+    border: 7px solid tomato;
+    /* usando ejes X Y  movemos el elemento en horizontal o vertical resp3ecto a su ubicación*/
+    transform: rotateX(0deg);
+}
+.transform-2d-45{
+    width: 280px;
+    height: 280px;
+    background: url("imgs/img1.jpg") center / cover no-repeat  ;
+    border: 7px solid tomato;
+    /* usando ejes X Y  movemos el elemento en horizontal o vertical resp3ecto a su ubicación*/
+    transform: rotateX(45deg);
+}
+.transform-2d-135{
+    width: 280px;
+    height: 280px;
+    background: url("imgs/img1.jpg") center / cover no-repeat  ;
+    border: 7px solid tomato;
+    /* usando ejes X Y  movemos el elemento en horizontal o vertical resp3ecto a su ubicación*/
+    transform: rotateX(135deg);
+}
+.transform-2d-180{
+    width: 280px;
+    height: 280px;
+    background: url("imgs/img1.jpg") center / cover no-repeat  ;
+    border: 7px solid tomato;
+    /* usando ejes X Y  movemos el elemento en horizontal o vertical resp3ecto a su ubicación*/
+    transform: rotateX(180deg);
+}
+/* ROTACOIN EN Y */
+.transform-2d-Y-45{
+    width: 280px;
+    height: 280px;
+    background: url("imgs/img1.jpg") center / cover no-repeat  ;
+    border: 7px solid tomato;
+    /* usando ejes X Y  movemos el elemento en horizontal o vertical resp3ecto a su ubicación*/
+    transform: rotateY(45deg);
+}
+.transform-2d-Y-135{
+    width: 280px;
+    height: 280px;
+    background: url("imgs/img1.jpg") center / cover no-repeat  ;
+    border: 7px solid tomato;
+    /* usando ejes X Y  movemos el elemento en horizontal o vertical resp3ecto a su ubicación*/
+    transform: rotateY(135deg);
+}
+.transform-2d-Y-180{
+    width: 280px;
+    height: 280px;
+    background: url("imgs/img1.jpg") center / cover no-repeat  ;
+    border: 7px solid tomato;
+    /* usando ejes X Y  movemos el elemento en horizontal o vertical resp3ecto a su ubicación*/
+    transform: rotateY(180deg);
+}
+
+/* SESGAR UN ELEMENTO SKEW */
+.transform-skewX{
+    width: 280px;
+    height: 280px;
+    background: url("imgs/img1.jpg") center / cover no-repeat  ;
+    border: 7px solid tomato;
+    transform: skewX(45deg);
+}
+.transform-skewY{
+    width: 280px;
+    height: 280px;
+    background: url("imgs/img1.jpg") center / cover no-repeat  ;
+    border: 7px solid tomato;
+    transform: skewY(45deg);
+}
+
+
+/* ESCALA DE UN ELEMENTO EN X E Y */
+.transform-scaleX{
+    width: 280px;
+    height: 280px;
+    background: url("imgs/img1.jpg") center / cover no-repeat  ;
+    border: 7px solid tomato;
+    transform: scaleX(2);
+}
+.transform-scaleY{
+    width: 280px;
+    height: 280px;
+    background: url("imgs/img1.jpg") center / cover no-repeat  ;
+    border: 7px solid tomato;
+    transform: scaleY(1.5);
+}
+

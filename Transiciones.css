@@ -1,0 +1,80 @@
+/* CENTRADO PERFECTO EN COLUMNA */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.transicion{
+    width: 150px;
+    height: 150px;
+    margin: 25px;
+    background: coral;
+    border-radius: 50%;
+    transition: all 2s;
+}
+
+.contenido div:hover:nth-child(1){
+    width: 300px;
+    height: 300px;
+    background: red;
+}
+.contenido div:hover:nth-child(2){
+    width: 300px;
+    background: blueviolet;
+}
+.contenido div:hover:nth-child(3){
+    height: 300px;
+    background: yellowgreen;
+}
+
+
+
+/* BASE COMUN */
+.base{
+    width: 200px;
+    height: 200px;
+    background: cornflowerblue;
+    transition: all 1s;
+}
+
+/* TRANSICION LINEAR */
+.transicion-linear{
+   /* es el efecto de crecimiento linear */
+   transition-timing-function: linear;
+}
+div.base.transicion-linear:hover{
+    width: 400px;
+}
+
+/* TANSICION EASE */
+.transicion-ease{
+    transition-timing-function: ease;
+ }
+ div.base.transicion-ease:hover{
+     width: 450px;
+ }
+
+ 
+/* TANSICION EASE-IN */
+.transicion-ease-in{
+    transition-timing-function: ease-in;
+ }
+ div.base.transicion-ease-in:hover{
+     width: 450px;
+ }
+
+ /* TANSICION EASE-OUT */
+.transicion-ease-out{
+    transition-timing-function: ease-out;
+ }
+ div.base.transicion-ease-out:hover{
+     width: 450px;
+ }
+
+
+
+
+

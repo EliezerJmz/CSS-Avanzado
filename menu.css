@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    display: flex;
+    /* alineacion en el eje Y */
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 8px;
+    background-color: tomato;
+    box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.15);
+}
+.logo{
+    font-size: 25px;
+    font-weight: 700;
+}
+.logo a{
+    color: beige;
+}
+
+.header-nav{
+    display: flex;
+    flex-wrap: wrap;
+    /* toma todo el marjen posible a la izquierda */
+    margin-left: auto;
+    align-items: center;
+}
+
+/* pone todos los elementos li en linea */
+li{
+    display: inline-block;
+}
+ 
+nav a{
+    display: block;
+    padding: 8px 4px;
+    color: beige;
+}
+.user{
+display: flex;
+align-items: center;
+}
+
+span{
+    margin-left: 9px;
+    color: beige;
+    font-weight: 700;
+}
+img{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+/* la linea es un seudo elemento before */
+.user:before{
+    content: "";
+    width: 3px;
+    height: 22px;
+    background: beige;
+    margin-left: 9px;
+}

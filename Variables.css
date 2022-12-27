@@ -1,0 +1,44 @@
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+.color{
+    --titulo: tomato;
+    --fondo-menu: cornflowerblue;
+    --item: brown;
+    --item-hover: salmon;
+    --salmon-1: rgb(231, 85, 68);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: x-large;
+}
+.titulo{
+    color: var(--titulo);
+}
+.menu{
+    display: flex;
+    align-items: center;
+    text-align: center;
+  
+}
+.item{
+    width: 10%;
+    line-height: 50px;
+    text-align: center;
+    color: var(--item);
+    font-size: large;
+    transition: 0.2s linear;
+    border: 1px solid var(--salmon-1);
+    background-color: var(--fondo-menu);
+    margin: 1px;
+    border-radius: 7px;
+}
+
+.item:hover{
+    background-color: var(--item-hover);
+}

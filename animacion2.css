@@ -1,0 +1,147 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.ul{
+    text-align: left;
+}
+
+.animacion{
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    background: url("imgs/img6.jpg") center/cover;   
+    /* sintaxis: horizontal vertical difimunacion colorRGBA=rojo-verde-azul-alpha, otraCapaDeSombra */
+    box-shadow: 1px 5px 10px rgba(1, 1, 1, 0.3),  0px 6px 20px;
+}
+div.animacion:hover{
+    animation-name: animar;
+    animation-duration: 3.5s;
+    animation-timing-function: ease;
+    animation-delay: 200ms; 
+}
+
+@keyframes animar{
+    /* momento inicial de la animación en este caso dura 3.5s*/
+    0%{
+        transform: scale(0.3);
+        background: url("imgs/img9.jpg") center/cover;
+    }
+     /* momento inicial de la animación en este caso dura 1.5s*/
+     50%{
+        transform: scale(1.3);
+        background: url("imgs/img9.jpg") center/cover;
+    }
+
+}
+
+
+
+/* MAS FUNCINES DE ANIMACIÓN */
+
+/* REVERSE */
+.animacion-reverse{
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    background: url("imgs/img10.jpg") center/cover;   
+    /* sintaxis: horizontal vertical difimunacion colorRGBA=rojo-verde-azul-alpha, otraCapaDeSombra */
+    box-shadow: 1px 5px 10px rgba(1, 1, 1, 0.3),  0px 6px 20px;
+}
+div.animacion-reverse:hover{
+    animation-name: animar-2;
+    animation-duration: 3.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 200ms;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    
+}
+
+/* ANIMATION INFINITE */
+.animacion-infinite{   
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    background: url("imgs/img7.jpg") center/cover;   
+    /* sintaxis: horizontal vertical difimunacion colorRGBA=rojo-verde-azul-alpha, otraCapaDeSombra */
+    box-shadow: 1px 5px 10px rgba(1, 1, 1, 0.3),  0px 6px 20px;
+}
+div.animacion-infinite:hover{
+    animation-name: animar-2;
+    animation-duration: 3.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 200ms;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes animar-2{
+    /* momento inicial de la animación en este caso dura 3.5s*/
+    0%{
+        transform: scale(0.3);
+        background: url("imgs/img8.jpg") center/cover;
+    }
+     /* momento inicial de la animación en este caso dura 1.5s*/
+     100%{
+        transform: scale(1.3);
+        background: url("imgs/img8.jpg") center/cover;
+    }
+
+}
+
+/* FILL MODE */
+.animacion-fill{   
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+    background: url("imgs/img4.jpg") center/cover;   
+    /* sintaxis: horizontal vertical difimunacion colorRGBA=rojo-verde-azul-alpha, otraCapaDeSombra */
+    box-shadow: 1px 5px 10px rgba(1, 1, 1, 0.3),  0px 6px 20px;
+ 
+  
+}
+div.animacion-fill:hover{
+    animation-name: animacion-fill;
+    animation-duration: 2s;
+    animation-delay: 200ms;
+    animation-fill-mode:forwards;
+    animation-play-state: running;
+}
+@keyframes animacion-fill{
+    0%{
+        transform: translateX(-150px);
+    }
+    100%{
+        transform: translateX(150px);
+    }
+}
+
+/* PLAY STATE */
+.animacion-play-state{
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+    background: url("imgs/img4.jpg") center/cover;   
+    /* sintaxis: horizontal vertical difimunacion colorRGBA=rojo-verde-azul-alpha, otraCapaDeSombra */
+    box-shadow: 1px 5px 10px rgba(1, 1, 1, 0.3),  0px 6px 20px;
+
+    animation-name: animacion-play;
+    animation-duration: 2s;
+    animation-delay: 200ms;
+    animation-fill-mode:none;
+    animation-play-state:running;
+    /* animation-play-state: paused; */
+}
+@keyframes animacion-play{
+    0%{
+        transform: translateX(-150px);
+    }
+    100%{
+        transform: translateX(150px);
+    }
+}

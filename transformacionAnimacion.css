@@ -1,0 +1,51 @@
+/* CENTRADO PERFECTO EN COLUMNA */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.animacion{
+    background: linear-gradient(180deg, red, orange);
+    width: 200px;
+    height: 200px;
+    /* secuencia de animacion 3 segundos de forma infinita */
+    animation: skew 3s infinite;
+    /* sesgado de 20 grados */
+    transform: skew(20deg);
+    /* la animacion tendra una direccion alternada */
+    animation-direction: alternate;
+}
+.animacion-img{
+    /* imagen de fondo centrada y que cubra todo el contenedor  */
+    background: url("imgs/img1.jpg") center/cover no-repeat;
+    width: 400px;
+    height: 225px;
+    /* usamos colores rgba rojo verde azul alpha = es la sombra */
+    /* box-shadow: horizontal vertica difimunacion; */
+    /* 0 4px 8px es una capa de sombra */
+    /* gba rojo verde azul alpha = es la sombra  */
+    /* 0 6px 20px otra capa de sombra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px;
+    /* secuencia de animacion 3 segundos de forma infinita */
+    animation: skew 3s infinite;
+    /* sesgado de 20 grados */
+    transform: skew(20deg);
+    /* la animacion tendra una direccion alternada */
+    animation-direction: alternate;
+}
+
+
+/* le damos animacion a la propiedad skew */
+@keyframes skew{
+    /* le indicamos que a partir de su forma original 0% se sesge 20 grados en x y 20 grados en  y */
+    0%{
+        transform: skew(20deg, 20deg);
+    }
+    /* cuando llegue al 100% del sesgado que se sesgue de forma inversa */
+    100%{
+        transform: skew(-20deg, -20deg);
+    }
+}

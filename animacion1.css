@@ -1,0 +1,145 @@
+/* CENTRADO PERFECTO COLULMNA */
+.container-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.animacion{
+    background: orange;
+    width: 50px;
+    height: 150px;
+}
+div.animacion:hover{
+       /* le asignamos un nombre mover-derecha y la transicion ease-in*/
+       animation: mover-derecha 2s ease-in;
+       animation-delay: 200ms;
+}
+
+/* @keyframes nos sirve para indicar la animacion se mueeva de izquierda a derecha le  */
+/* le indicamos el nombre de la animacion en este caso mover-derecha */
+@keyframes mover-derecha{
+    /* inicia la animacion en 0%*/
+    0%{
+        /* la transformacion en el eje X inicia en 0px de movimiento */
+        transform: translateX(0px);
+    }
+    /* fin de la animacion en 100% */
+    100%{
+         /* la transformacion en el eje X finaliza en 400px de movimiento */
+         transform: translateX(400px);
+    }
+}
+
+/* ANIMACION DOS */
+.animacion2{
+    background: orange;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+div.animacion2:hover{
+       /* le asignamos un nombre mover-derecha y la transicion ease-in*/
+       animation: cuadro-circulo 3s ease-in;
+       animation-delay: 200ms;
+}
+
+/* @keyframes nos sirve para indicar la animacion se mueeva de izquierda a derecha le  */
+/* le indicamos el nombre de la animacion en este caso cuadro-circulo */
+@keyframes cuadro-circulo{
+    /* inicia la animacion en 0%*/
+    0%{
+        /* la transformacion en el eje X inicia en 0px de movimiento */
+        transform: translateX(0px);
+    }
+    /* fin de la animacion en 100% */
+    100%{
+         /* la transformacion en el eje X finaliza en 400px de movimiento */
+         transform: translateX(400px);
+         width: 150px;
+         height: 150px;
+         border-radius: 50%;
+         background: linear-gradient(120deg, orange 0%, red 100%);
+    }
+}
+
+
+/* ANIMACION TRES */
+.animacion3{
+    background: orange;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+div.animacion3:hover{
+       /* le asignamos un nombre mover y la transicion infinita*/
+       animation: mover 5s infinite;
+       animation-delay: 200ms;
+}
+
+/* @keyframes nos sirve para indicar la animacion se mueeva de izquierda a derecha le  */
+/* le indicamos el nombre de la animacion en este caso mover */
+@keyframes mover{
+    /* inicia la animacion en 0%* del tiempo de la animacion */
+    0%{
+        /* la transformacion en el eje X inicia en 0px de movimiento */
+        transform: translateX(0px);
+    }
+    /* en el 25% de la animacion se movera 200px en X*/
+    25%{
+         /* la transformacion en el eje X finaliza en 400px de movimiento */
+         transform: translateX(200px);
+         background: linear-gradient(120deg, orange 0%, red 100%);
+    }
+    50%{
+        /* X Y son los puntos de una coordenada  */
+        transform: translateY(200px) translateX(200px);
+        background: linear-gradient(to top, orange 0%, coral 100%);
+    }
+    75%{
+        /* X Y son los puntos de una coordenada  */
+        transform: translateY(200px) translateX(0px);
+        background: linear-gradient(to top, orange 0%, blue 100%);
+    }
+    100%{
+        /* X Y son los puntos de una coordenada  */
+        transform: translateY(0px) translateX(0px);
+    
+    }
+  
+}
+
+
+/* ANIMACION CUATRO IMAGEN */
+.animacion4{
+    width: 200px;
+    height: 200px;
+    border: solid 1px salmon;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px;
+    background: url("imgs/cubo1.jpg") center/cover;
+}
+div.animacion4:hover{
+       /* le asignamos un nombre mover-imagen y la transicion ease-in*/
+       animation: mover-imagen 4s ease infinite;
+       animation-delay: 500ms;
+}
+
+/* @keyframes nos sirve para indicar la animacion se mueeva de izquierda a derecha le  */
+/* le indicamos el nombre de la animacion en este caso mover-derecha */
+@keyframes mover-imagen{
+    /* inicia la animacion en 0%*/
+    0%{
+        /* la transformacion en el eje X inicia en 0px de movimiento */
+        transform: translateX(0px);
+    }
+    /* fin de la animacion en 100% */
+    100%{
+         /* la transformacion en el eje X finaliza en 400px de movimiento */
+         transform: translateX(220px);
+         background: url("imgs/cubo6.jpg") center/cover;
+    }
+}
+

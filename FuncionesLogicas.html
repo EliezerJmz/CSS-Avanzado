@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FuncionesLogicas.css">
+    <title>Funciones lógicas</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">LOGO</div>
+        <nav class="nav">
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=jzcyiIfEerI&list=PLg9145ptuAihoxLk6_fPLz0zD4o1S92ev&index=24">Video</a></li>
+                <li><a href="https://www.mamutlove.com/blog/funciones-min-max-clamp-en-css/">Tutorial</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clamp">Ejemplos</a></li>
+            </ul> 
+        </nav>
+    </header>
+
+    <main class="main">
+        <article>
+            <h1>Funciones lógicas en CSS</h1>
+            <section>
+                <h2>min(), max() y clamp()</h2>
+                <h3>
+                    Controlan el tamaño de los elementos y mantienen el espacio adecuado para implementar una tipografía fluida.
+                </h3>
+            </section>
+            <section>
+                <h2>min()</h2>
+                <h3>min(viewport, px), esta funcion se utiliza combinando dos medidas en este caso px y vw</h3>
+                <h3> Piensa en el valor de  min() como el máximo valor que una propiedad puede tener, en este caso 500px</h3>
+              
+                <div class="container">
+                    <div class="cuadro-min">
+                        <h4>width: min(50vw, 500px), min escoge el valor minimo para poner como ancho, en este caso 500px es menor que 50vw,
+                            pero al hacer la ventana mas pequeña, llegara el momento que los 50vw sean menor a los 500px,
+                            por eso el cuadro se hara mas mequeño, porque min toma los valores minimos para el ancho.
+                        </h4>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>max()</h2>
+                <h3>max(viewport, px), esta funcion se utiliza combinando dos medidas en este caso px y vw</h3>
+                
+                <div class="container">
+                    <div class="cuadro-max">
+                        <h4>width: max(50vw, 200px), max escoge el valor maximo para poner como ancho, si la ventana
+                            crece el cuadro se hará mas grande poruqe los 50vw creceran con la ventana, el cuadro no se hara mas pequeño 
+                            que los 200px que indicamos en ete caso.
+                        </h4>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>clamp()</h2>
+                <h3>
+                    TAMAÑO DE TEXTO FLUIDO, CLAMP(VALOR_MINIMO, VALOR_IDEAL, VALOR_MAXIMO) 
+                </h3>
+                <h3>
+                    Tenga en cuenta que el uso clamp() en tamaños de fuente, como en estos ejemplos, le permite establecer un tamaño de fuente que crece con el tamaño de la ventana gráfica, pero que no baja del tamaño de fuente mínimo ni supera el tamaño de fuente máximo
+                </h3>
+                
+                <div class="container">
+                    <div class="cuadro-clamp">
+                        <p class="clamp-1">Texto Fluido</p>    
+                        <p class="clamp-2">clamp() permite tener un texto fluido </p>
+                        <p class="clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi consequuntur porro dignissimos laudantium ipsam eveniet, tenetur libero fugiat dolore non facilis modi? Ipsum accusamus laboriosam fugiat voluptatibus deleniti laudantium hic?</p>   
+                    </div>
+                </div>
+            </section>
+        </article>
+    
+    </main>
+    <footer class="footer">
+      <h4>Sticky Footer</h4>
+    </footer> 
+</body>
+</html>
